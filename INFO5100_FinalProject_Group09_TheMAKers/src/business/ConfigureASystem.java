@@ -2,7 +2,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
 package business;
 
 import business.domain.CustomerProfile;
@@ -29,12 +28,11 @@ import com.github.javafaker.Faker;
 import java.util.Random;
 
 /**
- * @desc Bootstraps the entire EcoSystem 
- * Configures 1 Network, 3 Enterprises, 6 Organizations, 12 default login 
- * accounts, and seeds realistic customer profiles, serialized units, and work 
- * requests.
- * 
- * @author Kinder Izzo Celemin 
+ * @desc Bootstraps the entire EcoSystem Configures 1 Network, 3 Enterprises, 6
+ * Organizations, 12 default login accounts, and seeds realistic customer
+ * profiles, serialized units, and work requests.
+ *
+ * @author Kinder Izzo Celemin
  */
 public class ConfigureASystem {
 
@@ -118,7 +116,7 @@ public class ConfigureASystem {
             CustomerProfile cp = new CustomerProfile(fakeName, fakeEmail, 18 + rand.nextInt(50), plan);
             goodLifeEnt.getCustomerDirectory().add(cp);
         }
-        
+
         EquipmentModel rower = flexGearEnt.getEquipmentCatalog().addEquipmentModel("HydroPro Rower X1", "Rowing", "WaterRower US-CA", 12.50);
         EquipmentModel bag = flexGearEnt.getEquipmentCatalog().addEquipmentModel("Titan Heavy Combat Bag", "Combat", "Everlast Commercial", 8.00);
         EquipmentModel rack = flexGearEnt.getEquipmentCatalog().addEquipmentModel("PowerLift Squat Rack Pro", "Strength", "Rogue North America", 15.00);
