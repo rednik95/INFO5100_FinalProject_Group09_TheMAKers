@@ -223,7 +223,6 @@ public class ConfigureASystem {
         org6.getWorkQueue().getWorkRequestList().add(wr6);
         advisor1.getWorkQueue().getWorkRequestList().add(wr6);
         
-
         return system;
     }
 }
