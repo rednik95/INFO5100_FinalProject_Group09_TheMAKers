@@ -222,6 +222,7 @@ public class ConfigureASystem {
         wr6.setMessage("Corporate wellness policy verification");
         org6.getWorkQueue().getWorkRequestList().add(wr6);
         advisor1.getWorkQueue().getWorkRequestList().add(wr6);
+        
 
         return system;
     }
