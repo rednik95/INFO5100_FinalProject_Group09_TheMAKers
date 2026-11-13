@@ -20,7 +20,6 @@ public class PersonalTrainerWorkAreaJPanel extends javax.swing.JPanel {
     private UserAccount account;
     private Organization organization;
 
-
     public PersonalTrainerWorkAreaJPanel(JPanel container, UserAccount acc, Organization org, Enterprise ent, EcoSystem sys) {
         this.container = container;
         this.account = acc;
